@@ -9,6 +9,8 @@ function renderLicenseBadge(license) {
     return "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)";
   } else if (license === "UNLICENSE") {
     return "[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)";
+  } else {
+    return "";
   }
 
   // TODO: Create a function that returns the license link
@@ -48,18 +50,18 @@ function generateMarkdown(data) {
   return `
 # Project Title
 ${data.title}
-${data.license}
+${renderLicenseBadge(data.license)}
 
 ## Description
 ${data.description}
 
 # Table of Contents 
-* [Installation](#-Installation)
-* [Usage](#-Usage)
-* [License](#-License)
-* [Contributing](#-Contributing)
-* [Tests](#-Tests)
-* [Questions](#-Contact-Details)
+* [Installation](#Installation)
+* [Usage](#Usage)
+* [License](#License)
+* [Contributing](#Contributing)
+* [Tests](#Tests)
+* [Questions](#Contact-Details)
     
 ## Installation
 ${data.installation}
@@ -78,9 +80,10 @@ ${data.contributing}
 ${data.tests}
 
 ## Contact Details 
-If you have any questions, please contact me via email at ${data.email} or visit my GitHub profile ${data.github}.
-*Thank You,
-${data.name}`;
+If you have any questions, please contact me ${data.name} via email at ${
+    data.email
+  } or visit my GitHub profile ${data.github}.
+`;
 }
 
 module.exports = generateMarkdown;
