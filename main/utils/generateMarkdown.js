@@ -46,7 +46,7 @@ This project is licensed under the [${license} license](${renderLicenseLink(
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
-## Project Title
+# Project Title
 ${data.title}
 ${data.license}
 
@@ -78,11 +78,9 @@ ${data.contributing}
 ${data.tests}
 
 ## Contact Details 
-*Name: ${data.name}
-* GitHub Username: ${data.github}
-* Contact Email: ${data.email}
-
-`;
+If you have any questions, please contact me via email at ${data.email} or visit my GitHub profile ${data.github}).
+*Thank You,
+${data.name}`;
 }
 
 module.exports = generateMarkdown;
