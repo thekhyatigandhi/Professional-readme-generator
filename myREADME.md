@@ -1,5 +1,5 @@
 
-# Project Title
+# Project Title 
 a
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -31,4 +31,4 @@ undefined
 a
 
 ## Contact Details 
-If you have any questions, please contact me khyati via email at khyati@khyatigandhi.com or visit my GitHub profile @thekhyatigandhi.
+If you have any questions, please contact me khyati gandhi via email at khyati296@gmail.com or visit my GitHub profile https://github.com/thekhyatigandhi.

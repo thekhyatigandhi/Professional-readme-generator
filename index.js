@@ -88,7 +88,7 @@ const questions = [
   {
     type: "input",
     name: "github",
-    message: "State your GitHub username",
+    message: "State your GitHub username (without using @)",
     validate: validateInput,
   },
 

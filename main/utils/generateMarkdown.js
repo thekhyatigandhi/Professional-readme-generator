@@ -48,7 +48,7 @@ This project is licensed under the [${license} license](${renderLicenseLink(
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
-# Project Title
+# Project Title 
 ${data.title}
 ${renderLicenseBadge(data.license)}
 
@@ -82,7 +82,7 @@ ${data.tests}
 ## Contact Details 
 If you have any questions, please contact me ${data.name} via email at ${
     data.email
-  } or visit my GitHub profile ${data.github}.
+  } or visit my GitHub profile https://github.com/${data.github}.
 `;
 }
 
