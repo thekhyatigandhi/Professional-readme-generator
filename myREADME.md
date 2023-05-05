@@ -1,6 +1,6 @@
 
-# Project Title Hello
-[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
+# Weather app 
+[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
 
 ## Description
 a
@@ -20,7 +20,7 @@ a
 a
 
 ## License 
-ISC
+MOZILLA
 * As this license list was not comprehensive, if you need another license, use the contact information below to ask for license to be added. 
 
 ## Contributing 
@@ -30,4 +30,4 @@ undefined
 a
 
 ## Contact Details 
-If you have any questions, please contact me khyati gandhi via email at khyati296@gmail.com or visit my GitHub profile https://github.com/thekhyatigandhi.
+If you have any questions, please contact me khayti via email at khyati@khyatigandhi.com or visit my GitHub profile https://github.com/khyati.
