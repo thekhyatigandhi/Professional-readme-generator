@@ -3,7 +3,7 @@
 ## Description
 
 This is professional README generator which can be created using the command-line application. When prompted for information about the application repo, a high-quality professional README.md is generated with the title of your project, Description, Installation, Usage, license, Contributing, Tests and Questions.
-The link to the deployed page - https://thekhyatigandhi.github.io/weather-app/
+The link to the deployed page -
 
 - [WEBSITE](#Website)
 - [Technologies Used](#TechnologiesUsed)
