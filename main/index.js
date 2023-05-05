@@ -2,78 +2,111 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const path = require("path");
-const generateMarkdown = require ("./utils/generateMarkdown")
+const generateMarkdown = require("./utils/generateMarkdown");
+
+function validateInput(value) {
+  if (value != "") {
+    return true;
+  } else {
+    return "Please answer the question to move forward";
+  }
+}
 
 // TODO: Create an array of questions for user input
 const questions = [
-    {
-type: "input",
-name: "title",
-message: "What is the title of your project?",
-},
-{
-type: "input",
-name: "description",
-message: "Describe the purpose and function of your project",
-},
-{
-type: "input",
-name: "installation",
-message: "What are the dependancies required for your project?",
-},
-{
-type: "input",
-name: "usage",
-message: "State the languages and technologies associated with the project",
-},
-{
-type: "input",
-name: "contirbuting",
-message: "Please list all the contributors (Use GitHub Usernames)",
-},
-{
-type: "input",
-name: "tests",
-message: "How to test this application?",
-},
-{
-type: "checkbox",
-name: "license",
-message: "Select the license that applies to your project",
-choices : ["MIT" ,"ISC", "MOZILLA", "UNLICENSE", "NONE" ]
-},
-{
-type: "input",
-name: "name",
-message: "State your full name",
-},
-{
+  {
+    // question for title of the project
+    type: "input",
+    name: "title",
+    message: "What is the title of your project?",
+    validate: validateInput,
+  },
+  {
+    // question for the description of the project
+    type: "input",
+    name: "description",
+    message: "Describe the purpose and function of your project",
+    validate: validateInput,
+  },
+  {
+    // question for Installation
+    type: "input",
+    name: "installation",
+    message: "What are the dependancies required for your project?",
+    validate: validateInput,
+  },
+  {
+    // question for usage of the project
+    type: "input",
+    name: "usage",
+    message: "State the languages and technologies associated with the project",
+    validate: validateInput,
+  },
+  {
+    // question for adding contributors of the project
+    type: "input",
+    name: "contirbuting",
+    message: "Please list all the contributors (Use GitHub Usernames)",
+    validate: validateInput,
+  },
+  {
+    // question for tests for the project
+    type: "input",
+    name: "tests",
+    message: "How to test this application?",
+    validate: validateInput,
+  },
+  {
+    // question with list option for license
+    type: "list",
+    name: "license",
+    message: "Select the license that applies to your project",
+    choices: ["MIT", "ISC", "MOZILLA", "UNLICENSE"],
+    validate: validateInput,
+  },
+  {
+    // Questions for Gitbhub and personal information
+    type: "input",
+    name: "name",
+    message: "State your full name",
+    validate: validateInput,
+  },
+  {
     type: "input",
     name: "github",
     message: "State your GitHub username",
+    validate: validateInput,
+  },
+
+  {
+    type: "input",
+    name: "email",
+    message: "Provide a valid email address",
+    validate: function (value) {
+      if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(value)) {
+        return true;
+      } else {
+        return "Not a valid email address. Please enter a valid email address.";
+      }
     },
-
-    {
-        type: "input",
-        name: "email",
-        message: "Provide a valid email address",
-        },
-
-]
-.then((answers) => {
-const readmePageContent = generateReadMe(answers);
+  },
+];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    return fs.writeFileSync(path.join(process.cwd(),filename),data);
+  fs.writeFile(fileName, generateMarkdown(data), function (err) {
+    if (err) {
+      return console.log(err);
+    }
+  });
 }
-
 // TODO: Create a function to initialize app
 function init() {
-    inquirer.createPromptModule(questions).then((responses)=>{
-        console.log("creating a professional README.ms file");
-        
-    }
+  inquirer.prompt(questions).then((data) => {
+    console.log(JSON.stringify(data, null, " "));
+    data.getLicense = getLicense(data.license);
+    writeToFile("./example/README.md", data);
+  });
 }
 
 // Function call to initialize app
