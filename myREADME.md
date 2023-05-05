@@ -1,7 +1,6 @@
 
-# Project Title 
-a
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# Project Title Hello
+[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
 
 ## Description
 a
@@ -12,7 +11,7 @@ a
 * [License](#License)
 * [Contributing](#Contributing)
 * [Tests](#Tests)
-* [Questions](#Contact-Details)
+* [Contact Me](#Contact-Details)
     
 ## Installation
 a
@@ -21,7 +20,7 @@ a
 a
 
 ## License 
-MIT
+ISC
 * As this license list was not comprehensive, if you need another license, use the contact information below to ask for license to be added. 
 
 ## Contributing 
