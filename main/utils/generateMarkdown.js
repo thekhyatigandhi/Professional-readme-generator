@@ -69,10 +69,8 @@ ${data.installation}
 ${data.usage}
 
 ## License 
-This project is licensed under the ${data.license} license. ${renderLicenseLink(
-    data.license
-  )}
-* As this license list was not comprehensive, if you need another license, use the contact information below to ask for license to be added. 
+This project is licensed under the ${data.license} license.
+
 
 ## Contributing 
 ${data.contributing}
