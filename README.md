@@ -5,15 +5,15 @@
 This is professional README generator which can be created using the command-line application. When prompted for information about the application repo, a high-quality professional README.md is generated with the title of your project, Description, Installation, Usage, license, Contributing, Tests and Questions.
 The link to the deployed page -
 
-- [WEBSITE](#Website)
+- [Application](#Application)
 - [Technologies Used](#TechnologiesUsed)
 - [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
 
-## Website
+## Application
 
-The following animation shows the web application's appearance and functionality:
+The following animation shows the application's appearance and functionality:
 
 ![portfolio demo](./Assets/Images/Project%20GIF.gif)
 
