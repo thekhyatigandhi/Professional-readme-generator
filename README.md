@@ -5,13 +5,13 @@
 This is professional README generator which can be created using the command-line application. When prompted for information about the application repo, a high-quality professional README.md is generated with the title of your project, Description, Installation, Usage, license, Contributing, Tests and Questions.
 The link to the deployed page - https://thekhyatigandhi.github.io/weather-app/
 
-- [WEBSITE](#WEBSITE)
+- [WEBSITE](#Website)
 - [Technologies Used](#TechnologiesUsed)
 - [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
 
-## WEBSITE
+## Website
 
 The following animation shows the web application's appearance and functionality:
 
@@ -19,8 +19,7 @@ The following animation shows the web application's appearance and functionality
 
 ## Technologies Used
 
-Technologies Used
-Javascript
+Javascript </br>
 NODE JS
 
 ## Usage
