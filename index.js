@@ -59,7 +59,7 @@ const questions = [
   {
     // question for adding contributors of the project
     type: "input",
-    name: "contirbuting",
+    name: "contributing",
     message: "Please list all the contributors (Use GitHub Usernames)",
     validate: validateInput,
   },
