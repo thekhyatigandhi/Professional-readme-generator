@@ -4,6 +4,20 @@ const fs = require("fs");
 const path = require("path");
 const generateMarkdown = require("./utils/generateMarkdown");
 
+// A function that returns a license badge based on which license is passed in
+// If there is no license, return an empty string
+function renderLicenseBadge(license) {
+  if (license === "MIT") {
+    return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
+  } else if (license === "ISC") {
+    return "[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)";
+  } else if (license === "MOZILLA") {
+    return "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)";
+  } else if (license === "UNLICENSE") {
+    return "[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)";
+  }
+}
+
 function validateInput(value) {
   if (value != "") {
     return true;
@@ -104,8 +118,8 @@ function writeToFile(fileName, data) {
 function init() {
   inquirer.prompt(questions).then((data) => {
     console.log(JSON.stringify(data, null, " "));
-    data.getLicense = getLicense(data.license);
-    writeToFile("./example/README.md", data);
+    data.licenseBadge = renderLicenseBadge(data.license);
+    writeToFile("./README.md", data);
   });
 }
 

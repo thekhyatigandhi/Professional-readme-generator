@@ -45,39 +45,39 @@ This project is licensed under the [${license} license](${renderLicenseLink(
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
+  return `
 ## Project Title
 ${data.title}
 ${data.license}
 
-# Description
+## Description
 ${data.description}
 
 # Table of Contents 
 * [Installation](#-Installation)
 * [Usage](#-Usage)
-* [License](#-Installation)
+* [License](#-License)
 * [Contributing](#-Contributing)
 * [Tests](#-Tests)
-* [Questions](#-Contact-Information)
+* [Questions](#-Contact-Details)
     
-# Installation
+## Installation
 ${data.installation}
 
-# Usage
+## Usage
 ${data.usage}
 
-# License 
+## License 
 ${data.license}
 * As this license list was not comprehensive, if you need another license, use the contact information below to ask for license to be added. 
 
-# Contributing 
+## Contributing 
 ${data.contributing}
 
-# Tests
+## Tests
 ${data.tests}
 
-# Contact Information 
+## Contact Details 
 *Name: ${data.name}
 * GitHub Username: ${data.github}
 * Contact Email: ${data.email}
