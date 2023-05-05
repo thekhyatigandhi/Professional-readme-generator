@@ -78,7 +78,7 @@ ${data.contributing}
 ${data.tests}
 
 ## Contact Details 
-If you have any questions, please contact me via email at ${data.email} or visit my GitHub profile ${data.github}).
+If you have any questions, please contact me via email at ${data.email} or visit my GitHub profile ${data.github}.
 *Thank You,
 ${data.name}`;
 }
