@@ -2,7 +2,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const path = require("path");
-const generateMarkdown = require("./utils/generateMarkdown");
+const generateMarkdown = require("./main/utils/generateMarkdown");
 
 // A function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
