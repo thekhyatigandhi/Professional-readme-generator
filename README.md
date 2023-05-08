@@ -3,7 +3,6 @@
 ## Description
 
 This is professional README generator which can be created using the command-line application. When prompted for information about the application repo, a high-quality professional README.md is generated with the title of your project, Description, Installation, Usage, license, Contributing, Tests and Questions.
-The link to the deployed page -
 
 - [Application](#Application)
 - [Technologies Used](#TechnologiesUsed)
@@ -15,7 +14,10 @@ The link to the deployed page -
 
 The following animation shows the application's appearance and functionality:
 
-![portfolio demo](./Assets/Images/Project%20GIF.gif)
+![portfolio demo](./main/Assets/WalkthroughVideo.gif)
+
+The following animation shows the generated README file
+![portfolio demo](./main/Assets/Generated%20read%20me.gif)
 
 ## Technologies Used
 
