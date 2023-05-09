@@ -119,7 +119,7 @@ function init() {
   inquirer.prompt(questions).then((data) => {
     console.log(JSON.stringify(data, null, " "));
     data.licenseBadge = renderLicenseBadge(data.license);
-    writeToFile("./Output/myREADME.md", data);
+    writeToFile("./Output/README.md", data);
   });
 }
 
