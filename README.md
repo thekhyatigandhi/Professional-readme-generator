@@ -17,7 +17,7 @@ The following animation shows the application's appearance and functionality:
 ![portfolio demo](./main/Assets/WalkthroughVideo.gif)
 
 The following animation shows the generated README file
-![portfolio demo](./main/Assets/GeneratedReadme.gif)
+![portfolio demo](./main/Assets/generated-readme.gif)
 
 ## Technologies Used
 
